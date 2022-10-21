@@ -66,8 +66,8 @@ pub mod aarch64;
 #[cfg(any(target_arch = "x86", target_arch = "x86_64"))]
 mod x86;
 
-#[cfg(not(any(target_arch = "aarch64", target_arch = "x86", target_arch = "x86_64")))]
-compile_error!("This crate works only on `aarch64`, `x86`, and `x86-64` targets.");
+// #[cfg(not(any(target_arch = "aarch64", target_arch = "x86", target_arch = "x86_64")))]
+// compile_error!("This crate works only on `aarch64`, `x86`, and `x86-64` targets.");
 
 /// Create module with CPU feature detection code.
 #[macro_export]
